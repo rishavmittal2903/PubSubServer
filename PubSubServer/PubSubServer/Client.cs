@@ -9,7 +9,7 @@ namespace PubSubServer
 {
    public class Client
     {
-        private static string[] Greetings = { "Hello, How are you?", "Hey, I am good", "Hi, What is your good name?", "Hi, I am living in America" };
+        private string[] Greetings = { "Hello, How are you?", "Hey, I am good", "Hi, What is your good name?", "Hi, I am living in America" };
         private Random random = new Random();
         Task[] taskArray = new Task[10];
         private T RandomEnumValue<T>()
