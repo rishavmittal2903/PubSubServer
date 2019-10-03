@@ -1,0 +1,11 @@
+C:\ReactMagic\PubSub\PubSubServer\PubSubServer\bin\Debug\netcoreapp2.0\PubSubServer.deps.json
+C:\ReactMagic\PubSub\PubSubServer\PubSubServer\bin\Debug\netcoreapp2.0\PubSubServer.runtimeconfig.json
+C:\ReactMagic\PubSub\PubSubServer\PubSubServer\bin\Debug\netcoreapp2.0\PubSubServer.runtimeconfig.dev.json
+C:\ReactMagic\PubSub\PubSubServer\PubSubServer\bin\Debug\netcoreapp2.0\PubSubServer.dll
+C:\ReactMagic\PubSub\PubSubServer\PubSubServer\bin\Debug\netcoreapp2.0\PubSubServer.pdb
+C:\ReactMagic\PubSub\PubSubServer\PubSubServer\obj\Debug\netcoreapp2.0\PubSubServer.csprojAssemblyReference.cache
+C:\ReactMagic\PubSub\PubSubServer\PubSubServer\obj\Debug\netcoreapp2.0\PubSubServer.csproj.CoreCompileInputs.cache
+C:\ReactMagic\PubSub\PubSubServer\PubSubServer\obj\Debug\netcoreapp2.0\PubSubServer.AssemblyInfoInputs.cache
+C:\ReactMagic\PubSub\PubSubServer\PubSubServer\obj\Debug\netcoreapp2.0\PubSubServer.AssemblyInfo.cs
+C:\ReactMagic\PubSub\PubSubServer\PubSubServer\obj\Debug\netcoreapp2.0\PubSubServer.dll
+C:\ReactMagic\PubSub\PubSubServer\PubSubServer\obj\Debug\netcoreapp2.0\PubSubServer.pdb
