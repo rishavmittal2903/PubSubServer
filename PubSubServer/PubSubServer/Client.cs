@@ -20,11 +20,20 @@ namespace PubSubServer
             var message = data.AsyncState as PublisherAndSubscriber;
             await message.PublishMessage(Greetings[random.Next(0, Greetings.Length)]);
         }
+        private async Task SubscribeUsers(Task task)
+        {
+            var data = task.AsyncState as PublisherAndSubscriber;
+            if (data != null)
+            {
+                var subscriberObject = taskArray[random.Next(taskArray.Length)].AsyncState as PublisherAndSubscriber;
+                await data.SubscribeMessage(subscriberObject);
+            }
+        }
+       
         public async Task CreatePublisherAndSubscriber()
         {
-            
+
             #region Creating random publisher for different news channels
-           
             for (int i = 0; i < taskArray.Length; i++)
             {
                 var value = RandomEnumValue<PublisherType>();
@@ -35,15 +44,7 @@ namespace PubSubServer
             #endregion
             Task.WaitAll(taskArray);
             #region Creating subscriber for publishers 
-            foreach (var task in taskArray)
-            {
-                var data = task.AsyncState as PublisherAndSubscriber;
-                if (data != null)
-                {
-                    var subscriberObject = taskArray[random.Next(taskArray.Length)].AsyncState as PublisherAndSubscriber;
-                    await data.SubscribeMessage(subscriberObject);
-                }
-            }
+            Parallel.ForEach(taskArray, item => SubscribeUsers(item));
             #endregion
             #region Publish messages
             Parallel.ForEach(taskArray, item => SendMessage(item));
