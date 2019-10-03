@@ -33,7 +33,7 @@ namespace PubSubServer.Entity
         public void ShowMessage(object sender, Message messageFormat)
         {
             PublisherAndSubscriber pubSub = (PublisherAndSubscriber)sender;
-            Console.WriteLine(this.type+ ": Message sent by "+ pubSub.type +" message : " +messageFormat.message);
+            Console.WriteLine("Subscriber : " + this.type + "=> Message publish by " + pubSub.type + ":" + messageFormat.message);
         }
     }
 }

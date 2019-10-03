@@ -1,11 +1,8 @@
 ﻿using PubSubServer.Enums;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PubSubServer.Entity
 {
-  public  class Message
+    public class Message
     {
         public PublisherType type { get; set; }
         public string message { get; set; }

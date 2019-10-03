@@ -1,13 +1,11 @@
 ﻿using PubSubServer.Entity;
 using PubSubServer.Enums;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace PubSubServer
 {
-   public class Client
+    public class Client
     {
         private string[] Greetings = { "Hello, How are you?", "Hey, I am good", "Hi, What is your good name?", "Hi, I am living in America" };
         private Random random = new Random();
